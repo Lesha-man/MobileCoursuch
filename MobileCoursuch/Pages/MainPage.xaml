@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 mc:Ignorable="d"
+                 x:Class="MobileCoursuch.MainPage"
+                 Title="MasterApp"
+                  IsPresentedChanged="MasterDetailPage_IsPresentedChanged">
+    <MasterDetailPage.Master>
+        <ContentPage BackgroundColor="#14110C" Title="Master">
+            <ContentPage.Content>
+                <StackLayout x:Name="MenuLayout" Padding="0, 30, 0, 0">
+                    <Button x:Name="HomeButton" Text="Home" BorderWidth="0" BackgroundColor="#14110C" BorderColor="#00FFFFFF" TextColor="#F3F3F3" Clicked="HomeButton_Clicked"></Button>
+                    <Button x:Name="SearchButton" Text="Search" BorderWidth="0" BackgroundColor="#14110C" BorderColor="#00FFFFFF" TextColor="#F3F3F3" Clicked="SearchButton_Clicked"></Button>
+                    <Button x:Name="LogInButton" Text="Log in" BorderWidth="0" BackgroundColor="#14110C" BorderColor="#00FFFFFF" TextColor="#F3F3F3" Clicked="LogInButton_Clicked"></Button>
+                    <Button x:Name="SignInButton" Text="Sign in" BorderWidth="0" BackgroundColor="#14110C" BorderColor="#00FFFFFF" TextColor="#F3F3F3" Clicked="SignInButton_Clicked"></Button>
+                    <Button x:Name="UploadImage" Text="Upload image" BorderWidth="0" BackgroundColor="#14110C" BorderColor="#00FFFFFF" TextColor="#F3F3F3" Clicked="UploadImage_Clicked"></Button>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage/>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

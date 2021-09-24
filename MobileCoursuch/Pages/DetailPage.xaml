@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MobileCoursuch.DetailPage" 
+             BackgroundColor="Black"
+             Title="Flex images">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="myBackgroundImage.jpg" Aspect="AspectFit" />
+            <ScrollView x:Name="Scroll">
+                <StackLayout x:Name="Text" SizeChanged="Text_SizeChanged">
+                    <BoxView x:Name="VoidBox"/>
+                    <StackLayout BackgroundColor="#F8F8F8" Padding="10">
+                        <Label Text="Cloud image store by Flex" TextColor="#000000" FontSize="38" />
+                        <Label TextColor="#000000" Text="We represent our free platform for publishing and downloading your images" FontSize="Body"/>
+                        <Image HeightRequest="600">
+                            <Image.Source>
+                                <UriImageSource Uri="https://unsplash.it/200/390" 
+                                CachingEnabled="false"/>
+                            </Image.Source>
+                        </Image>
+                        <Label TextColor="#000000" Text="You want to share your images with each others? We can to help you. Flex Images is a open platform to content creators. Just upload your photo, and we show it for users of our platform." FontSize="Body"/>
+                        <Image HeightRequest="600">
+                            <Image.Source>
+                                <UriImageSource Uri="https://unsplash.it/200/390" 
+                                CachingEnabled="false"/>
+                            </Image.Source>
+                        </Image>
+                        <Label TextColor="#000000" Text="We have been working since 2020" FontSize="Body"/>
+                        <Image HeightRequest="600">
+                            <Image.Source>
+                                <UriImageSource Uri="https://unsplash.it/200/390" 
+                                CachingEnabled="false"/>
+                            </Image.Source>
+                        </Image>
+                        <Label TextColor="#000000" Text="Monetize your creativity" FontSize="Body"/>
+                        <Image HeightRequest="600">
+                            <Image.Source>
+                                <UriImageSource Uri="https://unsplash.it/200/390" 
+                                CachingEnabled="false"/>
+                            </Image.Source>
+                        </Image>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

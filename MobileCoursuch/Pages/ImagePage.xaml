@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:MobileCoursuch="clr-namespace:MobileCoursuch"
+             x:Class="MobileCoursuch.Pages.ImagePage">
+    <StackLayout>
+        <Image x:Name="ImageElement">
+            <Image.Source>
+                <UriImageSource Uri="{Binding url}"/>
+            </Image.Source>
+        </Image>
+        <Button Text="Download" BackgroundColor="#161616" TextColor="#F2F2F2" HeightRequest="60" Clicked="Button_Clicked"/>
+    </StackLayout>
+</ContentPage>

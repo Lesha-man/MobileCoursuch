@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileCoursuch.Pages.LogInPage"
+             Title="Log in" 
+             BackgroundColor="#000000">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="myBackgroundImage.jpg" Aspect="AspectFit" />
+            <StackLayout BackgroundColor="#7FFFFFFF" HorizontalOptions="Fill" VerticalOptions="Center" Padding="10" Margin="10">
+                <Label Text="Login" FontSize="Large" TextColor="#000000" />
+                <Entry x:Name="LoginEntry" BackgroundColor="#F2F2F2" Placeholder="Your login.." />
+                <Label Text="Password" FontSize="Large"  TextColor="#000000" />
+                <Entry x:Name="PasswordEntry" BackgroundColor="#F2F2F2" Placeholder="Your password.." IsPassword="true"/>
+                <Button Text="Submit" BackgroundColor="#161616" TextColor="#F2F2F2" HeightRequest="60" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
